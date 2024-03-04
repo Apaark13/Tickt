@@ -1,4 +1,4 @@
-# Tickt Project
+# Tickt
 
 Tickt is a full-stack web application aimed at enhancing the airline ticket booking process. The project showcases a blend of backend excellence, frontend interactivity, structured schema, and robust CRUD functionality.
 
