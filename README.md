@@ -13,6 +13,7 @@ Tickt is a full-stack web application aimed at enhancing the airline ticket book
 
 - `client/`: Contains the frontend code built with React using Vite.
 - `server/`: Contains the backend code built with FastAPI.
+- `server/docs/`: Contains the backend Database schema and project structure documentation.
 
 ## Installation and Setup
 
@@ -39,7 +40,7 @@ Tickt is a full-stack web application aimed at enhancing the airline ticket book
 
 ## Usage
 
-Once both the backend and frontend servers are running, you can access the Tickt application by visiting `http://localhost:3000` in your web browser.
+Once both the backend and frontend servers are running, you can access the Tickt application by visiting `http://localhost:5137` in your web browser.
 
 ## Conclusion
 
