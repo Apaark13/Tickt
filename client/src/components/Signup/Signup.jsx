@@ -14,7 +14,7 @@ const Signup = () => {
     const handleSignup = async () => {
         try {
             var username = name;
-            const response = await axios.post('http://127.0.0.1:8000/api/v1/users/', { email,phone_number,username, password});
+            const response = await axios.post('https://tickt-server.onrender.com/api/v1/users/', { email,phone_number,username, password});
             // Handle successful login response
             console.log('Signup successful:', response.data);
             navigate('/login');

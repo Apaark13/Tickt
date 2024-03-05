@@ -9,7 +9,7 @@ const Flight = () => {
 
   const loadFlights = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/v1/flights/')
+      const response = await axios.get('https://tickt-server.onrender.com/api/v1/flights/')
       setFlights(response.data.map(flight => ({
         ...flight,
         departure_datetime: format(new Date(flight.departure_datetime), 'yyyy-MM-dd HH:mm:ss'),

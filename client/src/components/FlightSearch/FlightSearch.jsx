@@ -19,7 +19,7 @@ const FlightSearch = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/v1/flights/search', { departureCity, arrivalCity, departureDateTime, arrivalDateTime, seatCount });
+            const response = await axios.post('https://tickt-server.onrender.com/api/v1/flights/search', { departureCity, arrivalCity, departureDateTime, arrivalDateTime, seatCount });
             // Handle successful flight search response
             setFlights(response.data.map(flight => ({
               ...flight,

@@ -11,7 +11,7 @@ const Flight = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/v1/bookings/`);
+        const response = await axios.get(`https://tickt-server.onrender.com/api/v1/bookings/`);
         setBookings(response.data);
         console.log(response.data);
       } catch (error) {

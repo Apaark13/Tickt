@@ -19,7 +19,7 @@ const fetchFlight = async () => {
   try {
       console.log("first fetch");
       const response = await axios.get(
-          `http://127.0.0.1:8000/api/v1/flights/${flightId}`
+          `https://tickt-server.onrender.com/api/v1/flights/${flightId}`
       );
       console.log(response.data);
 
@@ -73,7 +73,7 @@ const fetchFlight = async () => {
       
     try {
 
-      const response = await axios.post("http://127.0.0.1:8000/api/v1/booking/", data);
+      const response = await axios.post("https://tickt-server.onrender.com/api/v1/booking/", data);
       console.log("Booked flight", response.data);
       fetchFlight();
       navigate(`/mybookings`);

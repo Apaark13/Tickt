@@ -12,7 +12,7 @@ const MyBookings = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/v1/bookings/${user_id}`);
+        const response = await axios.get(`https://tickt-server.onrender.com/api/v1/bookings/${user_id}`);
         setBookings(response.data);
       } catch (error) {
         console.error('Error fetching bookings:', error);
