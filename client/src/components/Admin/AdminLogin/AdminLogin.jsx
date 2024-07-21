@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     // try {
-      const response = await axios.post("http://127.0.0.1:8000/api/v1/admin/login/", {
+      const response = await axios.post("https://tickt-server.onrender.com/api/v1/admin/login/", {
         email,
         password,
       });
